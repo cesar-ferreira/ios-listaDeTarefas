@@ -14,12 +14,14 @@ class AddViewController: UIViewController {
     
     @IBAction func add(_ sender: Any) {
         
+        
         if let task = taskText.text {
             
-            let task = TaskUserDefaults()
-            task.saveTask(task: task as! String)
+            let taskManager = TaskUserDefaults()
+            taskManager.saveTask(task: task)
             
             taskText.text = ""
+            self.navigationController?.popViewController(animated: true)
         }
         
     }
@@ -29,5 +31,6 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+ 
 
 }

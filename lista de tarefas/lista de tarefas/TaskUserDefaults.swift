@@ -34,4 +34,12 @@ class TaskUserDefaults {
         
     }
     
+    func remove(index: Int) {
+        
+        tasks = list()
+        
+        tasks.remove(at: index)
+        UserDefaults.standard.set(tasks , forKey: KEY)
+        
+    }
 }
