@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1024.6376811594205" y="146.65178571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="rrq-Fc-Pu8">
             <objects>
-                <viewController id="GI5-li-lL4" sceneMemberID="viewController">
+                <viewController id="GI5-li-lL4" customClass="AddViewController" customModule="lista_de_tarefas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sgu-Ec-MLj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,17 @@
                                 <rect key="frame" x="20" y="93" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="taskText:" destination="wls-12-K6w" eventType="editingDidEnd" id="UZ8-lh-iuh"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oP-8k-qM8">
                                 <rect key="frame" x="155" y="135" width="65" height="30"/>
                                 <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="add:" destination="GI5-li-lL4" eventType="touchUpInside" id="8Zb-WC-zfV"/>
+                                    <action selector="add:" destination="wls-12-K6w" eventType="touchUpInside" id="ttN-Kc-Uer"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -81,8 +88,12 @@
                         <viewLayoutGuide key="safeArea" id="wGk-kb-RVL"/>
                     </view>
                     <navigationItem key="navigationItem" id="S29-mx-zTA"/>
+                    <connections>
+                        <outlet property="taskText" destination="nxy-Am-h2t" id="Ugc-JY-HNB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuQ-PY-WZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wls-12-K6w" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1776.8" y="124.58770614692655"/>
         </scene>

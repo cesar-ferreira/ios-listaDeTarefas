@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612D914E23AAAD95004BEA15 /* TaskUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612D914D23AAAD95004BEA15 /* TaskUserDefaults.swift */; };
 		6189F12323AAA1FF00EC6F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F12223AAA1FF00EC6F8F /* AppDelegate.swift */; };
 		6189F12523AAA1FF00EC6F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F12423AAA1FF00EC6F8F /* SceneDelegate.swift */; };
 		6189F12723AAA1FF00EC6F8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F12623AAA1FF00EC6F8F /* ViewController.swift */; };
 		6189F12A23AAA1FF00EC6F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6189F12823AAA1FF00EC6F8F /* Main.storyboard */; };
 		6189F12C23AAA20000EC6F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6189F12B23AAA20000EC6F8F /* Assets.xcassets */; };
 		6189F12F23AAA20000EC6F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6189F12D23AAA20000EC6F8F /* LaunchScreen.storyboard */; };
+		6189F13723AAAAAC00EC6F8F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F13623AAAAAC00EC6F8F /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		612D914D23AAAD95004BEA15 /* TaskUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUserDefaults.swift; sourceTree = "<group>"; };
 		6189F11F23AAA1FF00EC6F8F /* lista de tarefas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lista de tarefas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6189F12223AAA1FF00EC6F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6189F12423AAA1FF00EC6F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		6189F12B23AAA20000EC6F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6189F12E23AAA20000EC6F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6189F13023AAA20000EC6F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6189F13623AAAAAC00EC6F8F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				6189F12B23AAA20000EC6F8F /* Assets.xcassets */,
 				6189F12D23AAA20000EC6F8F /* LaunchScreen.storyboard */,
 				6189F13023AAA20000EC6F8F /* Info.plist */,
+				6189F13623AAAAAC00EC6F8F /* AddViewController.swift */,
+				612D914D23AAAD95004BEA15 /* TaskUserDefaults.swift */,
 			);
 			path = "lista de tarefas";
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				6189F12723AAA1FF00EC6F8F /* ViewController.swift in Sources */,
 				6189F12323AAA1FF00EC6F8F /* AppDelegate.swift in Sources */,
+				6189F13723AAAAAC00EC6F8F /* AddViewController.swift in Sources */,
 				6189F12523AAA1FF00EC6F8F /* SceneDelegate.swift in Sources */,
+				612D914E23AAAD95004BEA15 /* TaskUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
